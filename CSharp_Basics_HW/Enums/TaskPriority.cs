@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Basics_HW.Models
+namespace CSharp_Basics_HW.Enums
 {
     internal enum TaskPriority
     {

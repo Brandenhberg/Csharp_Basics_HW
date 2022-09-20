@@ -1,0 +1,15 @@
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.csproj.AssemblyReference.cache
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.AssemblyInfoInputs.cache
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.AssemblyInfo.cs
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.csproj.CoreCompileInputs.cache
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\bin\Debug\net6.0\CSharp_Basics_HW.exe
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\bin\Debug\net6.0\CSharp_Basics_HW.deps.json
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\bin\Debug\net6.0\CSharp_Basics_HW.runtimeconfig.json
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\bin\Debug\net6.0\CSharp_Basics_HW.dll
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\bin\Debug\net6.0\CSharp_Basics_HW.pdb
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.dll
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\refint\CSharp_Basics_HW.dll
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.pdb
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\CSharp_Basics_HW.genruntimeconfig.cache
+C:\Work\C#_Projects\CSharp_Basics_HW\CSharp_Basics_HW\obj\Debug\net6.0\ref\CSharp_Basics_HW.dll

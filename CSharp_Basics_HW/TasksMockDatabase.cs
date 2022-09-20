@@ -6,39 +6,14 @@ namespace CSharp_Basics_HW
     {
         static List<Models.Task> tasks = new List<Models.Task>();
 
-        //public  TasksMockDatabase()
+        public static List<Models.Task> Tasks { get => tasks; }
+
+        public static void AddnewNewtask(Models.Task newTask) => tasks.Add(newTask);
+        public static Models.Task FindTaskById(string taskId) => tasks.FirstOrDefault(t => t.TaskId == taskId);
+
+        //public void AssignTask(string taskId, Employee empl)
         //{
-        //    tasks = new List<Models.Task>();
-        //}
 
-        //public TasksMockDatabase(Models.Task newTask)
-        //{
-        //    tasks = new List<Models.Task>() { newTask };
-        //}
-
-        public static List<Models.Task> Tasks
-        {
-            get => tasks;
-        }
-
-
-        public static void CreateNewtask()
-        {
-            tasks.Add(new Models.Task());
-        }
-
-
-
-        public Models.Task FindTaskById(string taskId)
-        {
-            Models.Task task = tasks.FirstOrDefault(t => t.TaskId == taskId);
-
-            return task;
-        }
-
-        public void AssignTask(string taskId, Employee empl)
-        {
-
-        }       
+        //}       
     }
 }

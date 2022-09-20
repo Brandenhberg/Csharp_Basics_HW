@@ -4,27 +4,15 @@
 
 namespace CSharp_Basics_HW
 {
-    internal class EmployeesMockDatabase
+    internal static class EmployeesMockDatabase
     {
 
-        private List<Employee> employees;
-        public List<Employee> Employees { get => employees; }
+        private static List<Employee> employees = new List<Employee>();
+        public static List<Employee> Employees { get => employees; }
 
+        public static void AddNewEmployee(Employee newEmployee) => employees.Add(newEmployee);
 
-        public EmployeesMockDatabase()
-        {
-            employees = new List<Employee>();
-        }
-
-        public EmployeesMockDatabase(Employee newEmployee)
-        {
-            employees = new List<Employee>() { newEmployee };
-        }
-
-        public void AddNewEmployee(Employee newEmployee) => employees.Add(newEmployee);
-
-
-        public IEnumerable<Models.Task> TasksOfSelectedEmployee(string nickname)
+        public static IEnumerable<Models.Task> TasksOfSelectedEmployee(string nickname)
         {
             Employee empl = employees.First(e => e.Nickname == nickname);
 

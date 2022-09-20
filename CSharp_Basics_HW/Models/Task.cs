@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CSharp_Basics_HW.Enums;
 
 namespace CSharp_Basics_HW.Models
 {

@@ -1,57 +1,51 @@
 ﻿using CSharp_Basics_HW.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CSharp_Basics_HW
+namespace CSharp_Basics_HW.Menus
 {
     internal class EmployeeMenu
     {
-        TaskMenu taskMenu
+        TaskMenu taskMenu;
 
-        public EmployeeMenu()
+        public EmployeeMenu(TaskMenu taskMenu)
         {
-            ShowMainMenu();
+            this.taskMenu = taskMenu;
+
+            EmployeeMenuHandler();
         }
 
-        public void ShowMainMenu()
+        private void EmployeeMenuHandler()
         {
-            int pressedKey;
-            ConsoleKeyInfo keyInfo;
+            WriteMenuOnConsole();
 
-          
+            ConsoleKeyInfo key = Console.ReadKey(true);
 
-            string inputValue = Console.ReadLine();
-            bool parsed = int.TryParse(inputValue, out pressedKey);
-
+            bool flag = false;
 
             do
             {
-                WriteMenuOnConsole();
-            }
-            while (!parsed);
+
+            } while (!flag);
 
 
-            switch (pressedKey)
+            bool val = key.Key switch
             {
-                case (1):
-                {
-                    Console.WriteLine();
-                    break;
-                }
-                case (2):
-                {
-                    
-                    break;
-                }
-            }
+                ConsoleKey.D1 or ConsoleKey.NumPad1 => AddEmployee(),
+                ConsoleKey.D2 or ConsoleKey.NumPad2 => AddEmployee(),
+                ConsoleKey.D3 or ConsoleKey.NumPad3 => AddEmployee(),
+                ConsoleKey.D4 or ConsoleKey.NumPad4 => AddEmployee(),
+                ConsoleKey.D5 or ConsoleKey.NumPad5 => AddEmployee(),
+                _ => false
 
+            };
+            
+
+
+            string inputValue = Console.ReadLine();
+            //bool parsed = int.TryParse(inputValue, out pressedKey);
 
         }
 
-        private void WriteMenuOnConsole()
+        public void WriteMenuOnConsole()
         {
             Console.Clear();
 
@@ -61,17 +55,19 @@ namespace CSharp_Basics_HW
             Console.WriteLine("4. Modify Employee");
             Console.WriteLine("5. Back to Main Menu");
             Console.WriteLine("6. Exit");
-            
         }
 
-        public void ShowSubMenu()
+        private void WriteSubMenu()
         {
 
         }
 
-
-        private void AddEmployee()
+        private bool AddEmployee()
         {
+            bool flag = false;
+
+
+
             Employee newEmployee = new();
             Console.WriteLine("Name: ");
             newEmployee.Name = Console.ReadLine();
@@ -79,9 +75,9 @@ namespace CSharp_Basics_HW
             newEmployee.Surname = Console.ReadLine();
             Console.WriteLine("Nickname: ");
             newEmployee.Nickname = Console.ReadLine();
-            Console.WriteLine("Want ot add a task? y/n: ");
+            Console.WriteLine("Want to add a task? y/n: ");
             ConsoleKeyInfo keyInfo = Console.ReadKey(true);
-            
+
             switch (keyInfo.Key)
             {
                 case ConsoleKey.N:
@@ -99,6 +95,10 @@ namespace CSharp_Basics_HW
 
             }
 
+
+
+            //EmployeesMockDatabase.Employees.Add()
+            return flag;
         }
     }
 }
